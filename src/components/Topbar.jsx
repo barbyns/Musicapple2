@@ -1,7 +1,6 @@
 import appleLogo from '../assets/apple.svg';
 import musicLogo from '../assets/music.svg';
 
-
 const Topbar = () => (
   <header className="bg-black text-white sticky top-0 p-4 flex items-center justify-between z-10">
     

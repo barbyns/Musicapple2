@@ -1,19 +1,14 @@
 import Sidebar from './components/Sidebar';
 import Topbar from './components/Topbar';
 import Home from './pages/Home';
-import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="flex">
-      
       <Sidebar />
-
-    
-      <div className="flex flex-col flex-1 bg-black min-h-screen">
+      <div className="ml-64 w-full flex flex-col min-h-screen bg-black">
         <Topbar />
         <Home />
-        <Footer />
       </div>
     </div>
   );

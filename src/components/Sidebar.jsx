@@ -12,10 +12,10 @@ const Sidebar = () => {
 
   return (
     <aside className="fixed top-0 left-0 w-64 h-screen bg-black text-white flex flex-col p-6 shadow-lg">
-      {/* Logo */}
+    
       <h1 className="text-2xl font-bold mb-10">Music</h1>
 
-      {/* Search input */}
+    
       <div className="relative mb-10">
         <input
           type="text"
@@ -24,7 +24,7 @@ const Sidebar = () => {
         />
       </div>
 
-      {/* Menu navigazione */}
+    
       <nav className="flex flex-col gap-4">
         {menuItems.map((item) => (
           <button
