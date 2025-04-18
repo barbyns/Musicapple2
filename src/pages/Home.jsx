@@ -3,7 +3,7 @@ import Section from '../components/Section';
 import MusicCard from '../components/MusicCard';
 import { useDispatch } from 'react-redux';
 import { setCurrentTrack } from '../features/playerSlice';
-
+import ExploreButton from '../components/ExploreButton';
 
 import Banner1 from '../assets/1a.png';
 import Banner2 from '../assets/1b.png';
@@ -54,7 +54,24 @@ const Home = () => {
           </div>
         ))}
       </Section>
-
+      <section className="mt-12">
+  <h2 className="text-2xl font-bold mb-6">Altro da esplorare</h2>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    {[
+      "Esplora per genere",
+      "Worldwide",
+      "Video musicali",
+      "Decenni",
+      "Classifiche",
+      "Nuovi artisti",
+      "Attività e stati d’animo",
+      "Audio spaziale",
+      "Hit del passato",
+    ].map((label) => (
+      <ExploreButton key={label} text={label} />
+    ))}
+  </div>
+</section>
     
       <Section title="Nuove uscite">
    

@@ -72,3 +72,56 @@ main {
     font-size: 14px;
   }
 }
+footer {
+  background-color: #1c1c1e;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+footer span, footer a {
+  color: #9ca3af; /* Grigio chiaro */
+  font-size: 0.875rem; /* 14px */
+}
+
+footer a:hover, footer span:hover {
+  color: #ffffff; /* Hover bianco */
+  text-decoration: underline;
+}
+
+footer .font-semibold {
+  color: #ffffff; /* Apple Inc. in bianco pieno */
+}
+/* Sidebar fissa */
+aside {
+  background-color: #000000; /* nero puro */
+  color: #ffffff;
+}
+
+/* Pulsanti della sidebar */
+aside button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+}
+
+aside button:hover {
+  color: #ff3b30; /* rosso apple hover */
+}
+
+/* Search input */
+aside input[type="text"] {
+  background-color: #1c1c1e;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Placeholder */
+aside input::placeholder {
+  color: #a0aec0;
+}
+
