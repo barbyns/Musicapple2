@@ -4,7 +4,7 @@ import MusicCard from '../components/MusicCard';
 import { useDispatch } from 'react-redux';
 import { setCurrentTrack } from '../features/playerSlice';
 
-// Importa le immagini
+
 import Banner1 from '../assets/1a.png';
 import Banner2 from '../assets/1b.png';
 import Banner3 from '../assets/1c.png';
@@ -37,14 +37,14 @@ const Home = () => {
     <main className="ml-64 p-8 bg-black min-h-screen text-white">
       <h1 className="text-3xl font-bold mb-6">Novità</h1>
 
-      {/* Banner principale */}
+     
       <div className="flex gap-4 mb-8">
         <BannerCard imgSrc={Banner1} text="" />
         <BannerCard imgSrc={Banner2} text="" />
         <BannerCard imgSrc={Banner3} text="" />
       </div>
 
-      {/* Nuovi episodi radio */}
+   
       <Section title="Nuovi episodi radio">
         {radioEpisodes.map((episode) => (
           <div key={episode.id} className="w-40 flex-shrink-0">

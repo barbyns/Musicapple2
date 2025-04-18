@@ -1,11 +1,17 @@
 const Sidebar = () => (
-    <aside className="w-64 bg-black text-white h-screen fixed p-4 flex flex-col gap-4">
-      <h1 className="text-2xl font-bold mb-4">Music</h1>
-      <input className="p-2 rounded bg-gray-800 text-white" placeholder="Cerca" />
-      <nav className="flex flex-col gap-2 mt-4">
-        <button className="text-left">Home</button>
-        <button className="text-left">Novità</button>
-        <button className="text-left">Radio</button>
+    <aside className="fixed top-0 left-0 w-64 h-screen bg-black text-white flex flex-col p-4 overflow-y-auto">
+      <h1 className="text-2xl font-bold mb-8">Music</h1>
+  
+      <input
+        type="text"
+        placeholder="Cerca"
+        className="p-2 mb-6 rounded bg-gray-800 text-white w-full"
+      />
+  
+      <nav className="flex flex-col gap-4">
+        <button className="text-left text-lg">Home</button>
+        <button className="text-left text-lg">Novità</button>
+        <button className="text-left text-lg">Radio</button>
       </nav>
     </aside>
   );

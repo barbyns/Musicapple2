@@ -12,4 +12,4 @@ function Novità() {
   );
 }
 
-export default Novita;
+export default Novità;

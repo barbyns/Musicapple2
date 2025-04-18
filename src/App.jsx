@@ -5,8 +5,11 @@ import Home from './pages/Home';
 function App() {
   return (
     <div className="flex">
+      
       <Sidebar />
-      <div className="flex-1">
+
+    
+      <div className="flex flex-col flex-1 bg-black min-h-screen">
         <Topbar />
         <Home />
       </div>
